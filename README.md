@@ -35,11 +35,13 @@
 
     npm test
 
-### Test login to your application
+### Start your application
 
     ./bin/www
 
-    http://192.168.33.60:3000/
+### Login to your application
+
+* [http://192.168.33.60:3000/](http://192.168.33.60:3000/)
 
 ### Deploy to Heroku
 
