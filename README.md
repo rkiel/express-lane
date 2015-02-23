@@ -47,6 +47,7 @@
 
     heroku auth:login
     heroku apps:create --addons mongolab
+    heroku config:add COOKIE_SECRET="So Long, and Thanks for All the Fish"
     git push heroku master
     heroku open
 
