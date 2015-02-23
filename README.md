@@ -17,6 +17,8 @@
 
 ### Make it your own
 
+    mv express-lane MY-NEW-PROJECT
+    cd MY-NEW-PROJECT
     rm -rf .git
     git init
     git add .
