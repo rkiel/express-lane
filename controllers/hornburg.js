@@ -2,7 +2,7 @@ var User = require('../models/user');
 var password = require('../models/passwordBcrypt');
 var tokenizer = require('../models/tokenizer');
 
-var sessionType   = process.env.SESSION_TYPE || 'cookie'
+var sessionType   = process.env.SESSION_TYPE || 'cookie';
 var cookieSession = (sessionType === 'cookie');
 var tokenSession  = (sessionType === 'token');
 

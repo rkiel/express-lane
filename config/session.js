@@ -2,7 +2,7 @@ var session = require('client-sessions');
 var userFromSession = require('../middleware/userFromSession');
 var winston = require('winston');
 
-var sessionType   = process.env.SESSION_TYPE || 'cookie'
+var sessionType   = process.env.SESSION_TYPE || 'cookie';
 var cookieSession = (sessionType === 'cookie');
 var tokenSession  = (sessionType === 'token');
 
