@@ -13,17 +13,45 @@
 
     mkdir -p ~/GitHub/rkiel
     cd ~/GitHub/rkiel
-    git clone git@github.com:rkiel/express-lane.git
+    git clone git@github.com:rkiel/express-lane.git MY-NEW-PROJECT
 
 ### Make it your own
 
-    mv express-lane MY-NEW-PROJECT
     cd MY-NEW-PROJECT
     rm -rf .git
     git init
     git add .
     git commit -m "Initial commit"
 
+### Startup development environment
+
+    vagrant up
+    vagrant ssh express
+
+    cd /vagrant
+    npm install
+
+### Run the tests
+
+    npm test
+
+### Test login to your application
+
+    ./bin/www
+
+    http://192.168.33.60:3000/
+
+### Deploy to Heroku
+
+    heroku auth:login
+    heroku apps:create --addons mongolab
+    git push heroku master
+    heroku open
+
 # Acknowledgements
 
-
+* [Code School - Building Blocks of Express](https://www.codeschool.com/courses/building-blocks-of-express-js)
+* [Code School - Soup to Bits: Building Blocks of Express](https://www.codeschool.com/screencasts/soup-to-bits-building-blocks-of-express-js)
+* [Code School - Blasting Off with Bootstrap](https://www.codeschool.com/courses/blasting-off-with-bootstrap)
+* [Everything You Ever Wanted to Know about Node Authentication by Randall Degges](https://www.youtube.com/watch?v=FkPqcIJvEPk)
+* [MongoDB for Node.js Developers - Week 7 Mongoose](https://university.mongodb.com/courses/M101JS/about)
