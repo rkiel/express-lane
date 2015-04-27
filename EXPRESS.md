@@ -1,6 +1,7 @@
 # Basics
 
-    // app.js
+## app.js
+
     var express = require('express');
     var app = express();
 
@@ -8,7 +9,8 @@
 
     module.exports = app;
 
-    // bin/www
+## bin/www
+
     #!/usr/bin/env node
 
     var app = require('./../app');
